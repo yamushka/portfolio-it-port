@@ -1,0 +1,130 @@
+.about {
+  padding: 6vw 0;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(2rem); 
+  filter: blur(2px);
+  transition:
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.1s, 
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.2s; 
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(2rem);
+    filter: blur(2px);
+  }
+}
+
+.about.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about__container {
+  display: flex;
+  gap: 4vw;
+  align-items: flex-end;
+}
+
+.about__image,
+.about__content {
+  flex: 1;
+}
+
+.about__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.about__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-md);
+}
+
+.about__text p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.65;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.about__divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  max-width: var(--container-width);
+  margin: 6vw auto;
+}
+
+.about__services {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about__services-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+}
+
+.about__services-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.about__services-description {
+  flex: 1;
+  font-size: 0.7rem;
+  line-height: 1.65;
+  max-width: 600px;
+  color: var(--color-text-secondary);
+}
+
+.about__services-list {
+  flex: 1;
+  display: flex;
+  gap: 4rem;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+}
+
+.about__services-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about__values {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joaanna Portfolio</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./src/assets/images/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./src/assets/images/favicon/web-app-manifest-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="./src/assets/images/favicon/web-app-manifest-512x512.png" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./src/assets/images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="manifest" href="./src/assets/images/favicon/site.webmanifest" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- SPLASH -->
+
+
+  <!-- theme -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <span aria-hidden="true">☾☼</span>
+  </button>
+
+
+<!-- MENU  -->
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  aria-label="Toggle navigation menu"
+  aria-controls="fullscreen-menu"
+  aria-expanded="false"
+>
+  Menu
+</button>
+
+<!-- FULLSCREEN OVERLAY MENU -->
+<nav
+  class="menu--fullscreen"
+  id="fullscreen-menu"
+  role="navigation"
+  aria-label="Main navigation"
+>
+  <ul class="menu__list" role="list">
+    <li class="menu__item" role="listitem">
+      <a class="menu__link" href="#hero" aria-current="page">Home</a>
+    </li>
+    <li class="menu__item" role="listitem">
+      <a class="menu__link" href="#work">Work</a>
+    </li>
+    <li class="menu__item" role="listitem">
+      <a class="menu__link" href="#about">About</a>
+    </li>
+    <li class="menu__item" role="listitem">
+      <a class="menu__link" href="#contact">Let’s Talk</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+  <!-- hero-->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <!-- Video achtergrond -->
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="./assets/videos/background.mp4" type="video/mp4" />
+    </video>
+  
+    <div class="hero__overlay"></div>
+    <div class="hero__tagline">CREATIVE &lt; DEVELOPER &gt; & VISUAL THINKER</div>
+    <div class="hero__content">
+      <h1 class="hero__headline">
+        <span class="hero__line">
+          <span class="hero__char">J</span>
+          <span class="hero__char">O</span>
+          <span class="hero__char">A</span>
+          <span class="hero__char">N</span>
+          <span class="hero__char">N</span>
+          <span class="hero__char">A</span>
+        </span>
+        <span class="hero__line">
+          <span class="hero__char" data-label="Jade">J</span>
+          <span class="hero__char" data-label="Organic">O</span>
+          <span class="hero__char" data-label="Detail">D</span>
+          <span class="hero__char" data-label="Essence">E</span>
+          <span class="hero__char" data-label="Light">L</span>
+        </span>
+      </h1>
+    </div>
+  </section>
+  
+  
+ <!-- start work -->
+         <section class="work section" id="work" aria-labelledby="work-title">
+            <h2 id="work-title" class="visually-hidden">My Work</h2>
+            <div class="work__grid">
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects/stam.png"" alt="STAM Museum project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">STAM Museum project</h3>
+                  <p class="work__description">A minimal front-end rebuild of the STAM Museum website, focused on layout accuracy, typography, and responsive behavior. The goal was to recreate the design while maintaining clean structure and accessibility.</p>
+                  <div class="work__links">
+                    <a href="https://pgm-2425-atwork-1.github.io/STAM-project/" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="https://github.com/pgm-2425-atwork-1/STAM-project" class="work__link" target="_blank" rel="noopener noreferrer">Git</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects/bestof.png" alt="Best of 2024 project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">Best of 2024</h3>
+                  <p class="work__description">A multimedia library that allows users to easily browse content such as films, series, albums, games, and songs. The data is loaded through an API and displayed in a visually appealing, responsive interface. The project combines functionality with design to deliver a seamless user experience.</p>
+                  <div class="work__links">
+                    <a href="https://pgm-2425-atwork-1.github.io/best-of-project/" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects/receptjes.png" alt="Recept project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">Recept</h3>
+                  <p class="work__description">A recipe management API built with Node.js and Express.js, supporting CRUD operations. Recipes are stored in a JSON file. Includes CORS support and uses the native file system module.</p>
+                  <div class="work__links">
+                    <a href="https://github.com/pgmgent-pgm-2/recept-web-yamushka/" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects/app.png" alt="To Do app project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">To do app</h3>
+                  <p class="work__description">A simple yet powerful todo app featuring authentication, category management, and a custom API. Built with Node.js, Express, EJS, and SQLite, following the MVC architecture.</p>
+                  <div class="work__links">
+                    <a href="./assets/videos/app.mp4" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects/port.png" alt="Portfolio project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">Portfolio</h3>
+                  <p class="work__description">Portfolio website showcasing my skills and projects</p>
+                  <div class="work__links">
+                    <a href="#hero" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="work__item">
+                <div class="work__image-container">
+                  <img src="./assets/images/projects//practice.png" alt="Groepspraktijk Practice The inside project" class="work__image">
+                </div>
+                <div class="work__content">
+                  <h3 class="work__title">Groepspraktijk Practice the Inside</h3>
+                  <p class="work__description">My first real-world project — from the first client conversation to launch. I translated abstract needs into a clear structure, designed the full interface, and shaped the user experience from scratch. Build with Wordpress</p>
+                  <div class="work__links">
+                    <a href="https://practicetheinside.be/" class="work__link" target="_blank" rel="noopener noreferrer">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </section>
+
+      <!-- ------------------------------- -->
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title" class="visually-hidden">About Me</h2>
+        <div class="container about__container">
+          <div class="about__image">
+            <img src="./assets/images/3.jpg" alt="Portrait">
+          </div>
+          <div class="about__content">
+            <div class="about__header">
+              <span class="about__title">About</span>
+              <span class="about__name">Joanna Jodel </span>
+            </div>
+            <div class="about__text">
+              <p>I’m a developer who values clarity — in design, in code, and in how people use the web; with a background in recruitment, I switched careers to build things myself.</p>
+            
+              <p>Now I focus on developing web apps that are structured, accessible, and simple to use. <strong>I like minimal design and clean logic.</strong> I care more about building things right than building them fast.
+                I like systems that make sense, interfaces that feel calm, and websites that respect your time.</p>
+              <p>I’m a visual thinker. I need to understand how things connect, and I’ll keep working on something until it fits — functionally and visually.</p>
+            
+              <ul class="about__values">
+
+                <li>– I don’t like clutter. In code, in design, or in my apartment.</li>
+                <li>– I will refactor a function until it stops annoying me.</li>
+                <li>– If it works but it’s ugly, I will rebuild it.</li>
+                <li>– The button doesn’t need to spin. It needs to work.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+    
+     
+
+
+
+        <hr class="about__divider" />
+      
+        <div class="container about__services">
+          <h3 class="about__services-title">Skills</h3>
+          <div class="about__services-content">
+          
+            <div class="about__services-list">
+                <ul>
+                  <li><strong>Frontend Development</strong></li>
+                  <li>* HTML5 / CSS3 / JavaScript</li>
+                  <li>* Tailwind CSS / Responsive Design</li>
+                  <li>* UI/UX Design / Accessibility (WCAG)</li>
+                  <li>* Design Systems / Component Libraries</li>
+                </ul>
+                
+                <ul>
+                  <li><strong>Backend Development</strong></li>
+                  <li>* Node.js / Express.js</li>
+                  <li>* Knex.js / Objection.js</li>
+                  <li>* SQLite / SQL Basics</li>
+                  <li>* PHP / WordPress (Theme Development)</li>
+                </ul>
+                
+                <ul>
+                  <li><strong>CMS & Templating</strong></li>
+                  <li>* Craft CMS 5 / Twig Templating</li>
+                  <li>* WordPress / Custom Fields / Block Editor</li>
+                  <li>* Content Architecture & Structure</li>
+                </ul>
+              
+                <ul>
+                  <li><strong>Workflow & Tools</strong></li>
+                  <li>* Git / GitHub</li>
+                  <li>* Webpack / PostCSS / Build Tools</li>
+                  <li>* VS Code / Terminal / DevTools</li>
+                </ul>
+              
+                <ul>
+                  <li><strong>Other</strong></li>
+                  <li>* Visual Storytelling</li>
+                  <li>* Problem Solving & Debugging</li>
+                  <li>* Independent Project Ownership</li>
+                  <li>* Clear Communication & Documentation</li>
+                </ul>
+              </div>
+              
+          </div>
+        </div>
+      </section>
+      
+
+  <!-- ------------------------------- -->
+  <div class="separator-line"></div>
+  <section id="contact" class="contact-section">
+    <h2 class="visually-hidden">Contact</h2>
+  
+  
+  
+    <div class="container">
+      <div class="contact-header">
+        <a href="#hero" class="logo">J<span class="logo-dash">—</span>J</a>
+        <div class="contact-cta">
+          <a class="link" href="mailto:joannaojodel@gmail.com">LET'S HAVE A CHAT</a>
+        </div>
+      </div>
+  
+      <div class="contact-content">
+        <div class="contact-description">
+          <p>
+            Let’s build something refined, intentional, and rooted in purpose. </p>
+           <p> Tell me about your idea, your brand, your challenge.</p>
+           <p> I’ll help shape it — with code and clarity.</p>
+        
+          </div>
+  
+        <div class="contact-info">
+          <div class="phone">
+            <a class="link" href="tel:+32484964339">PHONE</a>
+          </div>
+          <div class="mail">
+            <a class="link" href="mailto:joannaojodel@gmail.com">MAIL</a>
+          </div>
+          <div class="linkedin">
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/joannajodel/">linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Separator Line -->
+  <div class="separator-line"></div>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+            <a href="#hero" class="logo">J<span class="logo-dash">—</span>J</a>
+        </div>
+        <div class="footer-tagline">
+          <p>I craft digital experiences with quiet confidence — clear, elegant, and built to last.</p>
+          <p> Timeless design, purposeful code. Rooted in simplicity, shaped with care.</p>
+         
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+            © <time datetime="2025">2025</time> joanna jodel
+          </div>
+
+          
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT DIALOG -->
+  <dialog class="modal" id="contact-dialog" data-open="false" aria-labelledby="modal-title" aria-modal="true">
+    <h2 id="modal-title" class="modal__title">Contact Me</h2>
+    <p class="modal__text">You can reach me at <a href="mailto:hello@example.com">joannaojodel@gmail.com</a></p>
+    <button id="close-dialog" class="modal__close" aria-label="Close dialog">Close</button>
+  </dialog>
+  
+  <!-- Trigger button -->
+  <button id="open-dialog" class="modal__trigger" aria-haspopup="dialog" aria-controls="contact-dialog">
+ SAY HI
+  </button>
+  
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <script src="./js/main.js" defer></script>
+</body>
+
+
+</html>

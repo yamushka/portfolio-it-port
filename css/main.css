@@ -1,0 +1,227 @@
+
+@import "./reset.css";
+@import "./variables.css";
+@import "./splash.css";
+@import "./navigation.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./cursor.css";
+@import "./hero.css";
+@import "./modal.css";
+@import "./work.css";
+
+
+
+body {
+  height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 1rem auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: 8rem 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* ===========================
+   THEME TOGGLE
+=========================== */
+.theme-toggle {
+  position: fixed;
+  bottom: var(--spacing-sm);
+  left: var(--spacing-sm);
+  z-index: 100;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  transition: all var(--transition-medium);
+}
+
+.theme-toggle:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+/* ===========================
+   ACCESSIBILITY
+=========================== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: black;
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  z-index: 999;
+  text-decoration: none;
+  transition: top var(--transition-medium);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* ===========================
+   LINKS
+=========================== */
+.link {
+  color: var(--color-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+  position: relative;
+}
+
+.link:hover {
+  color: var(--color-link-hover);
+  border-color: currentColor;
+}
+
+.link--large {
+  font-size: 1.5rem;
+}
+
+.link--underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width var(--transition-medium);
+}
+
+.link--underline:hover::after {
+  width: 100%;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dialogIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+   RESPONSIVE STYLES
+=========================== */
+@media (max-width: 64rem) {
+  .section {
+    padding: var(--spacing-md);
+  }
+
+  .hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: var(--spacing-md);
+  }
+
+  .hero__headline {
+    font-size: clamp(2.5rem, 10vw, 6rem);
+  }
+
+  .hero__tagline {
+    position: static;
+    margin-top: var(--spacing-md);
+    font-size: 0.7rem;
+  }
+
+  .hero__line {
+    justify-content: center;
+  }
+
+  .about__container,
+  .about__services-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .work__grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .menu--desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu--mobile {
+    display: flex;
+  }
+}
